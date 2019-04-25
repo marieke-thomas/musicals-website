@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body{
+    margin:0;
+    font-family: Arial;
+}
+
+h1{
+    font-size:80px;
+    font-family: 'Permanent Marker', cursive;
+    margin:10px;
+}
+
+li{
+    font-size:20px;
+    list-style-position:inside;
+    font-weight:bold;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+ol h2{
+    font-size:20px;
+    margin:none;
+    font-weight:bold;
+    text-align:center;
+/*this margin bit is tossing an error I don't understand*/
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #dd0000;
+    position:fixed;
+    color:white;
+    display:flex;
+    align-items:center;
+}
+
+.navItem{
+    margin-right:50px;
+    margin-left:40px;
+}
+
+.left{
+    margin-left:auto;
+    margin-right:10px;
+}
+
+.footer{
+    width: 100%;
+    height: 30px;
+    background-color:#dd0000;
+    font-size:11px;
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.red{
+    color: #dd0000;
+}
+
+.white{
+    color:white;
+}
+.white:hover{
+    text-decoration:none;
+    background-color:#b20000;
+}
+
+.noMargin{
+    margin-top:0px;
+    margin-bottom:0px
+}
+
+a{
+    text-decoration:none;
+    /*height:50px;*/
+}
+
+a:hover{
+    text-decoration:underline; 
+}
+
+.center{
+  text-align:center;
+}
+
+.mainText{
+    margin-left: 20%;
+}
+
+.verticalCenter{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.large{
+    font-size:25px;
+    /*font-weight:bold;*/
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    background-color:blue;
+    margin:30px;
+    padding:20px;
+    text-align:left;
+    border-radius:25px;
+}
+
+/*#imageBox{*/
+/*    width: 100%;*/
+/*}*/
+
+#coverPic, #imageBox{
+    width:100%;
+    height: auto;
+}
+
+/*this part isn't working correctly. I'm trying to force the footer to appear at the bottom of the screen.*/
+#everythingButTheFooter{
+    min-height:100%;
+}
+
+#navBuffer{
+    height:30px;
+}
