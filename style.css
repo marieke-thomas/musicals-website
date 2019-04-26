@@ -3,6 +3,7 @@
 body{
     margin:0;
     font-family: Arial;
+    min-height:100vh;
 }
 
 h1{
@@ -21,7 +22,7 @@ li{
 
 ol h2{
     font-size:20px;
-    margin:none;
+    margin:0;
     font-weight:bold;
     text-align:center;
 /*this margin bit is tossing an error I don't understand*/
@@ -38,8 +39,10 @@ ol h2{
 }
 
 .navItem{
-    margin-right:50px;
-    margin-left:40px;
+    padding-right:45px;
+    padding-left:45px;
+    height:50px;
+
 }
 
 .left{
@@ -65,8 +68,13 @@ ol h2{
 .white{
     color:white;
 }
+
 .white:hover{
     text-decoration:none;
+}
+
+
+.hover:hover{
     background-color:#b20000;
 }
 
@@ -84,6 +92,8 @@ a:hover{
     text-decoration:underline; 
 }
 
+
+
 .center{
   text-align:center;
 }
@@ -96,6 +106,7 @@ a:hover{
     display:flex;
     flex-direction:column;
     justify-content:center;
+    height:100%;
 }
 
 .large{
@@ -109,25 +120,22 @@ a:hover{
     grid-template-columns: 1fr 1fr 1fr;
 }
 .card{
-    background-color:blue;
+    background-color:#729cff;
     margin:30px;
     padding:20px;
     text-align:left;
     border-radius:25px;
 }
 
-/*#imageBox{*/
-/*    width: 100%;*/
-/*}*/
 
 #coverPic, #imageBox{
     width:100%;
     height: auto;
 }
 
-/*this part isn't working correctly. I'm trying to force the footer to appear at the bottom of the screen.*/
+/*Force the footer to appear at the bottom of the screen.*/
 #everythingButTheFooter{
-    min-height:100%;
+    min-height:calc(100vh-30px);
 }
 
 #navBuffer{
